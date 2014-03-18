@@ -1,0 +1,15 @@
+%body{:style => "background-color:	#99cc66;height:100px;width:250px;float:center;align:center;"}
+%body{:bottommargin => "100", :leftmargin => "200", :rightmargin => "200", :topmargin => "50"}
+%h1 
+	%b Komentarze
+%form{:action => "/zapisz"}
+Nazwa użytkownika:
+%br
+%input{:name => "firstname", :type => "text"}
+%br
+Wpisz swój komentarz:
+%br
+%input{:name => "lastname", :type => "text"}
+%br
+%button{:type => "button"} Wyślij!
+
