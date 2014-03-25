@@ -1,0 +1,15 @@
+/ %body{:style => "color: green; background: url(http://3.bp.blogspot.com/_JakVbJBuyhY/TGPsnJrBI1I/AAAAAAAAAG4/Ra4LFfvjobU/s1600/ksiazki.gif);"}
+/ %body{:bottommargin => "100", :leftmargin => "100", :rightmargin => "200", :topmargin => "50"}
+
+/ %div{:style => "background-color:#00cc99;height:200px;width:250px;float:left;"}/
+%html
+	%head
+		%link{:href => '/public/css/bootstrap.min.css', :rel => 'stylesheet', :type => 'text/css'}
+		%link{:href => 'public/css/main.css', :rel => 'stylesheet', :type => 'text/css'}
+
+
+	%body
+%h1 HAML Layout!
+
+%p= yield
+/#content= yield

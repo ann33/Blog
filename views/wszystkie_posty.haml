@@ -1,0 +1,10 @@
+%h1 Wszystkie posty
+
+%ol
+	- for posts in @posts
+		%li
+			= posts.title
+			%br/
+			= posts.body
+%br
+%a{:href => "/add_post"} Utwórz nowy post

@@ -1,16 +1,10 @@
-%body{:style => "color: green; background: url(http://3.bp.blogspot.com/_JakVbJBuyhY/TGPsnJrBI1I/AAAAAAAAAG4/Ra4LFfvjobU/s1600/ksiazki.gif);"}
-%body{:bottommargin => "100", :leftmargin => "100", :rightmargin => "200", :topmargin => "50"}
-
-%div{:style => "background-color:#00cc99;height:200px;width:250px;float:left;"}/
-%form{:action => "/zapisz"}
-Tytuł posta:
-%br
-%input{:name => "Tytuł", :type => "text"}
-%br
-Twoja notka:
-%br
-%input{:name => "Notka", :type => "text"}
-%br
-/ %input{:type => "submit", :value => "Zapisz"}
-%a{:href => "/add_post/action"}
-  %button{:type => "button"} Click Me!
+%form{:action => "/save_post", :method => :post}
+	Tytuł posta:
+	%br
+	%input{:name => "tytul", :type => "text"}
+	%br
+	Twoja notka:
+	%br
+	%textarea{:cols => "30", :name => "tekst", :rows => "20"}
+	%br
+	%input{:type => "submit", :value => "Zapisz"}
